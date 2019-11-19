@@ -1,0 +1,276 @@
+<html>
+	<head>
+    <link rel="stylesheet" type="text/css" href="1stpage.css">
+		<title>
+        	Registration
+        </title>
+	</head>
+	<body>     <ul>
+   		<li><a href="Home.html">Home</a></li>
+        <li><a href="Video.html">Help</a></li>
+        <li><a  class="active" href="Breeth_form.html">Register</a></li>
+        <li><a href="Breethe_home.html">About Us</a></li>                 
+        <li style="float:right"><a href="connect.html">Connect</a></li>
+    </ul>
+    	<h2>REGISTER WITH BREETHE</h2>
+		<form action="registerwith_breethe.php">
+       		<fieldset>
+       			<legend>Personal details </legend>
+                	<table>
+                    <tr>
+                    <td>
+        				First Name:
+                    </td>
+                    <td>
+                  		<input type="text" name="firstname"><br>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+       			 		Middle Name: 
+                    </td>
+                    <td>
+                    	<input type="text" name="middlename"><br>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+        				Last Name: 
+                    </td>
+                    <td>
+                        <input type="text" name="lastname"><br>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>
+        				Occupation: 
+                     </td>
+                     <td>   
+                        <select name="occupation">
+        							<option value="Service">Service</option>
+                        			<option value="Business">Business</option>
+                        			<option value="Entrepreneur">Entrepreneur</option>
+                        			<option value="Armed Forces"> Armed Forces</option>
+                        			<option value="Agriculture">Agriculture</option>
+                        			<option value="Technical Industry">Technical Imdustry</option>
+                        			<option value="other">Other</option>
+                    			</select><br>
+                      </td>
+                      </tr>
+                      <tr>
+                      <td>
+        				Age: 
+                      </td>
+                      <td> 
+                        <select name="agegroup">
+        					<option value="0-15">0-15</option>
+                			<option value="16-25">16-25</option>
+                			<option value="26-40">26-40</option>
+                			<option value="41-55">41-55</option>
+                			<option value="56-70">56-70</option>
+                			<option value="greaterthan70">Greater than 70</option>
+             			 </select><br>
+                      </td>
+                      </tr>
+                      <tr>
+                      <td>
+      					Gender:
+        			   </td>
+        		       <td>
+                       <table>
+                       <tr>
+                       <td>
+           				<input type="radio" name="gender" value="Male">Male
+        			   </td>
+        		       <td>
+           			     <input type="radio" name="gender" value="Female">Female
+        		       </td> 
+        		       <td>
+           			     <input type="radio" name="gender" value="LGBTQ+">LGBTQ+
+        		       </td>         	
+        		       <td>
+           			     <input type="radio" name="gender" value="Other">Other<br>
+                        </td></tr>
+                        </table
+                        ></td>
+        	</tr>
+            <tr>
+            <td>
+    			Phone Number: 
+            </td>
+            <td>
+                <input type="tel" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required><br>
+            </td>
+            </tr>
+            <tr>
+            <td>
+    			E-mail Id: 
+            </td>
+            <td>    
+                <input type="email" name="email"><br>
+            </td>
+            </tr>
+            <tr>
+            <td>
+       			Date of Birth: 
+            </td>
+            <td>
+                <input type="date" name="birthday"><br>
+            </td>
+            </tr>
+         </table>
+   
+        </fieldset>
+        <fieldset>
+        	<legend> Medical details </legend>
+            	<table>
+                	<tr>
+                    	<td>
+                        	Blood Group:
+                        </td>
+                        <td>
+                        	<select name="bloodgroup">
+                            	<option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option name="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                             </select>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                        	Agegroup:
+                        </td>
+                    	<td>
+                        	<select name="agegroup">
+        						<option value="0-15">0-15</option>
+                				<option value="16-25">16-25</option>
+                				<option value="26-40">26-40</option>
+                				<option value="41-55">41-55</option>
+                				<option value="56-70">56-70</option>
+                				<option value="greaterthan70">Greater than 70</option>
+             			 </select>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                        	<br><br>Does the user have any medical history of any illness?
+                        </td>
+                        <td>
+                        	<br><br><input type="checkbox" name="medhist" value="Yes">Yes
+						</td>
+                        <td>
+                        	<br><br<input type="checkbox" name="medhist" value="No">No
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                        	If yes, then:
+                        </td>
+                        <td>
+                        	<input type="radio" name="type" value="Chronic">Chronic
+                        </td>
+                        <td>
+                        	<input type="radio" name="type" value="Acute">Chronic
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                        	Name the disease or disorder:
+                        </td>
+                        <td>
+                        	<input type="text" name="disease">
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                        	Did you have any major surgery/treatment in 
+                            last six months?
+                        </td>
+                        <td>
+                        	<input type="radio" name="surgery" value="Yes">Yes
+                        </td>
+                        <td>
+                        	<input type="radio" name="Surgery" value="No">No
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                        	Weight:
+                        </td>
+                        <td>
+                        	<input type="tel" name="weight" required>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td>
+                        	Height:
+                        </td>
+                        <td>
+                        	<input type="tel" name="height" required>
+                        </td>
+                    </tr>
+                    
+                </table>
+        </fieldset>
+        <fieldset>
+        	<legend> Sign-Up </legend>
+            	<table>
+                	<tr>
+            			<td>
+        					Username: 
+            			</td>
+            			<td>
+        					<input type="text" name="uname" placeholder="Username" required><br>
+            			</td>
+            		</tr>
+            		<tr>
+            			<td>
+        					Password: 
+            			</td>
+            			<td>
+               			 <input type="password" name="breethe_password" required><br>
+            			</td>
+            		</tr>
+                </table>
+            
+        </fieldset><br><br>
+        
+			<input type="submit" value="Submit">
+            <input type="Reset"  value="Reset"><br><br>
+            
+            Already have an account?  <a href="#form1">Log In</a>
+        
+    </form>
+        <form action="loginwithbreethe.php" id="form1">
+        	<fieldset>
+            	<legend> Log-In </legend>
+        	<table>
+                	<tr>
+            			<td>
+        					Username: 
+            			</td>
+            			<td>
+        					<input type="text" name="uname" placeholder="Username" required><br>
+            			</td>
+            		</tr>
+            		<tr>
+            			<td>
+        					Password: 
+            			</td>
+            			<td>
+               			 <input type="password" name="breethe_password" required><br>
+            			</td>
+            		</tr>
+                </table>
+                </fieldset><br><br>
+        
+			<input type="submit" value="Submit">
+            <input type="Reset"  value="Reset">
+        </form>
+   </body>
+</html>
